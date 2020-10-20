@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    font-family: 'Lato',sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.container .nav-wrapper .left-side {
+    display: flex;
+}
+.container .nav-wrapper .left-side .nav-link-wrapper {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.container .nav-wrapper .left-side .nav-link-wrapper:hover {
+    border-bottom: 2px solid black;
+}
+.container .nav-wrapper .left-side .nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.container .nav-wrapper .left-side .nav-link-wrapper a:hover {
+    color: black;
+}
+.active-nav-link {
+    border-bottom: 2px solid black;
+}
+.active-nav-link a {
+    color: black !important;
+}
+.container .content-wrapper .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}
+.container .content-wrapper .portfolio-items-wrapper .portfolio-item-wrapper {
+    position: relative;
+}
+.container .content-wrapper .portfolio-items-wrapper .portfolio-item-wrapper .portfolio-image-background {
+    width: 87%;
+    height: 195px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-text-wrapper {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.image-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+.subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.logo-wrapper img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.image-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+.container .content-wrapper .two-column-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container .content-wrapper .two-column-wrapper .profile-image-wrapper img {
+    width: 100%;
+}
+.container .content-wrapper .two-column-wrapper .profile-content-wrapper {
+    padding: 30px;
+}
+.container .content-wrapper .two-column-wrapper .profile-content-wrapper h1 {
+    color: lightseagreen;
+}
